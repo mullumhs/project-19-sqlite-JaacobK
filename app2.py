@@ -18,7 +18,6 @@ def create_table(conn):
     ''')
     conn.commit()
 
-
 def add_movie(conn, title, director, year, rating):
     cursor = conn.cursor()
     
