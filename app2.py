@@ -37,9 +37,6 @@ def display_all_movies(conn):
         print(movie)
     conn.commit()
 
-
-
-
 def update_movie_rating(conn, title, new_rating):
     cursor = conn.cursor()
 
@@ -64,8 +61,6 @@ def find_movies_by_director(conn, director):
     for movie in  directors_movies:
         print(movie)
     conn.commit()
-
-
 
 def main():
 
@@ -170,8 +165,6 @@ def main():
     else:
 
         print("Error! Cannot create the database connection.")
-
-
 
 if __name__ == '__main__':
 
